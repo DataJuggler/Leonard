@@ -2,7 +2,7 @@
 
 The name “Leonard” came from my brain's loose connections:
 
-Vulkan ➜ Vulcan ➜ Spock ➜ Leonard Nimoy - Live Long And Prosper
+This project use RealESRGAN Vulkan Upscaler ➜ Vulcan ➜ Spock ➜ Leonard's!
 
 Leonard is a free, C# open-source video upscaler.
 ⚠️ Platform Support: Leonard runs on Windows only. Leonard uses WinForms, FFmpeg, and Real-ESRGAN
