@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<Nullable>disable</Nullable>		
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<ApplicationIcon>Upscale.ico</ApplicationIcon>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Upscale.ico" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Update="FFmpeg\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="RealESRGAN\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="DataJuggler.FFmpeg" Version="1.0.4" />
+    <PackageReference Include="DataJuggler.PixelDatabase" Version="9.0.1" />
+    <PackageReference Include="DataJuggler.RealESRGAN" Version="1.0.5" />
+    <PackageReference Include="DataJuggler.Win.Controls" Version="9.1.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
