@@ -11,8 +11,6 @@ Leonard is a free, C# open-source video upscaler.
 
 Converts an MP4 into a sequence of PNG images using FFmpeg
 
-Upscales each image using Real-ESRGAN Vulkan with an option 2x, 3x or 4x.
-
 Reassembles the upscaled images into a new MP4 using FFmpeg
 
 Get Last Frame - This button is useful for creating continuing videos. This will open the image in your default 
